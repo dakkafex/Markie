@@ -1,0 +1,14 @@
+{% extends 'master' %}
+
+{% block content %}
+<ul class="table-view">
+{% for item in items %}
+    <li class="table-view-cell">
+    <a href="/item/{{item.id}}" class="navigate-right" data-ignore="push">
+      <span class="badge">{{item.stock}}</span>
+      {{item.name}}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'master' %}
+
+{% block content %}
+<br>
+<div class="content-padded">
+  <h3 style="text-align: center;">Add a new sales item</h3>
+</div>
+<br>
+<br>
+<form class="input-group" method="POST" action="/newItem">
+  <input type="text" name="name" placeholder="Item Name" required>
+  <input type="text" name="stock" placeholder="Stock count" required>
+  <input type="text" name="price" placeholder="Price" required>
+  <input type="text" name="atribute" placeholder="Atribute">
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-block">Add New Item</button>
+</form>
+{% endblock %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ratchet template page</title>
+
+  <!-- Sets initial viewport load and disables zooming  -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include the compiled Ratchet CSS -->
+  <link href="/ratchet/css/ratchet.css" rel="stylesheet">
+  <link href="/markStyle.css" rel="stylesheet">
+
+  <!-- Include the compiled Ratchet JS -->
+  <script src="/ratchet/js/ratchet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar bar-nav">
+    <h1 class="title">Markie</h1>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    {% block content %} {% endblock %}
+  </div>
+  <nav class="bar bar-tab">
+    <a class="tab-item active" href="/itemIndex" data-transition="slide">
+    Inventory
+  </a>
+    <a class="tab-item" href="#">
+    New Group
+  </a>
+    <a class="tab-item" href="/newthing" data-transition="slide">
+    New Item
+  </a>
+    <a class="tab-item" href="#">
+    Nugget
+  </a>
+  </nav>
+
+</body>
+
+</html>
